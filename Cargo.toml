@@ -1,6 +1,13 @@
 [package]
 name = "winsrv"
-version = "0.1.0"
+version = "0.0.1"
+authors = ["zsaw<solkets@outlook.com>"]
 edition = "2021"
+description = "Simple implementation of windows service"
+license = "MIT"
+license-file = "LICENSE"
+repository = "https://github.com/zsaw/winsrv-rs"
 
-[dependencies]
+[dependencies.windows]
+version = "0.57.0"
+features = ["Win32_System_Services"]
